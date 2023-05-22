@@ -69,7 +69,7 @@
 - 不同元素可能有不同屬性：例如 a 標籤（超連結）中的 href 屬性
 
   ```html
-<a href=""></a>
+  <a href=""></a>
   ```
 
 - 元素能有多個屬性，屬性位置不影響功能
@@ -239,8 +239,6 @@ funtion name (){
 - &lt;br&gt;：換行（沒有結束標籤）
 
 - &lt;pre&gt;：preformatted，該元素中的文本會按照原本的格式做排列，比如空白或換行。
-
-  ![image 8.png](./HTML文件結構-assets/image%208.png)
 
 - &lt;div&gt;：division，為分割區塊使用，是**區塊元素（block level），前後會換行**，常用在網站的元素佈局規劃，像是一個袋子，可以用來做各層級分類。
 
