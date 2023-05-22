@@ -15,13 +15,11 @@
 
   * 內容：放在開始與結束標籤中間的東西
 
-    ![image.png](./05.22%20Day1%20HTML-assets/image.png)
-
 * HTML5 提供比起前代更多元素：
 
-  * 語意化區塊：<section>、<nav>、<header>
+  * 語意化區塊：	&lt;section>、	&lt;nav&gt;、	&lt;header&gt;
 
-  * 多媒體區塊：<video>、<audio>、<canvas>
+  * 多媒體區塊：	&lt;video>、&lt;audio&gt;、&lt;canvas&gt;
 
 * HTML & CSS & JavaScript：
 
