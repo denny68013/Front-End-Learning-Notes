@@ -58,19 +58,18 @@
 - 註解：Ctrl(Command)+/
 
 ```html
-&lt;!--註解--&gt;
+<!--註解-->
 ```
 
 ### 屬性
 
 - 屬性會加在開始標籤（角括弧）裡面，在標籤名稱之後，用一個空白隔開，如下圖：
 
-  ![image.png](./HTML標籤與語法-assets/image.png)
 
 - 不同元素可能有不同屬性：例如 a 標籤（超連結）中的 href 屬性
 
   ```html
-  &lt;a href=""&gt;&lt;/a&gt;
+<a href=""></a>
   ```
 
 - 元素能有多個屬性，屬性位置不影響功能
@@ -80,8 +79,6 @@
 - 元素如果使用不支援的屬性則沒有效果
 
   - 如 href 就是 a 標籤才有，放在其他如 h1 標籤，都不會有效果
-
-    ![image 1.png](./HTML標籤與語法-assets/image%201.png)
 
 ### id 屬性
 
@@ -103,7 +100,7 @@
 ### a 標籤超連結
 
 ```html
-&lt;a href=""&gt;&lt;/a&gt;
+<a href=""></a>
 ```
 
 - href：hypertext reference
@@ -125,5 +122,160 @@ funtion name (){
 
 ## HTML 的屬性一覽表
 
-&lt;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&gt;
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes>
+
+---
+# HTML 文件結構
+
+### &lt;!DOCTYPE html&gt;
+
+- 是 HTML 文件的宣告（declaration），不是標籤（tag）
+
+- 不區分大小寫
+
+### html 元素
+
+- html 元素就是 HTML 文件的根元素（root element），用來標示網頁的範圍
+
+- lang=”en-US”：用來告訴瀏覽器這份文件要以什麼語言閱讀\
+  HTML 的 ISO Language Codes\
+  <https://www.w3schools.com/tags/ref_language_codes.asp>\
+  HTML 的 ISO Country Codes\
+  <https://www.w3schools.com/tags/ref_language_codes.asp>
+
+### head 元素
+
+- &lt;meta&gt;元素：用來定義一些資訊給搜尋引擎與瀏覽器看
+
+  - 只有開始標籤沒有結束標籤
+
+  - chartset=”UTF-8”：編碼使用 UTF-8 格式
+
+  - name=”description”：網頁資訊的形容（只能使用 description，不能使用 description2）
+
+    - 不能寫成如下圖，有既定寫法
+
+    ```html
+    &lt;meta description="對網頁的說明"&gt;
+    ```
+
+  - name=”keywords”：網頁的關鍵字，一樣放在 content 裡去定義
+
+    - Google 不會用這個關鍵字標記在搜尋排名上
+
+    [https://www.youtube.com/watch?v=jK7IPbnmvVU](https://www.youtube.com/watch?v=jK7IPbnmvVU)
+
+    - 但是可能有其他家搜尋引擎會使用 keywords，所以你依然可以放進去
+
+  - name=”author”：網頁作者
+
+  - name=”viewport”：網頁的可見區域，當有設定好的時候在不同的視窗中被觀看的方式就會不一樣，跟 RWD（Responsive Web Design）響應式網站設計有關
+
+    - **width=device-width**
+
+      因為目前手機尺寸非常多，因此，我們就只要設定為 width=device-width 就可以自動符合所有不同手機螢幕他們自己的預設最佳解析度。
+
+      ### **initial-scale=1**
+
+      設定手機螢幕畫面的初始縮放比例為 100%。
+
+      ### **user-scalable=no**
+
+      有時候網站會有特殊設定，或者業主有指定不允許使用者改變縮放比例，則會將值設為 no。\
+      \
+      來源：<https://ithelp.ithome.com.tw/articles/10195279>
+
+- &lt;title&gt;元素：網頁標題
+
+- &lt;link&gt;元素：文件之間的關聯
+
+  - rel：relationship
+
+  - type：後方的種類是固定的，不能寫成 png2
+
+  - 這段是在連結網頁標題旁的縮圖要使用什麼圖片
+
+  - 連結到某個地方的 css 檔
+
+  - **CSS 檔的語法（在 HTML 文件中都寫在&lt;head&gt;元素裡）：**
+
+    - 選擇器：選擇哪些元素作為套用對象\
+      p{}：只要元素的標籤是&lt;p&gt;就會被選擇
+
+    - 屬性名稱：屬性值 → 選擇樣式要以怎麼樣呈現\
+      （與 HTML 的「屬性名稱=屬性值」寫法不同）
+
+    - 多種屬性之間以「;」分開，如果只有一種屬性也會習慣加上一個分號\
+      （與 HTML 的多種屬性是以「空格」分開不同）
+
+  - CSS 語法也可以寫在 HTML 裡，以&lt;style&gt;標籤包起來，如下圖，選擇&lt;div&gt;標籤後指定他的背景顏色屬性值為 aquamarine
+
+- &lt;style&gt;元素
+
+### body 元素
+
+- 網站上的內容都是寫在這個裡面
+
+**常用標籤**
+
+- 特殊的保留符號（指在 HTML 文件中已經被預設有公用的符號），需要參考 HTML Entity Code 來表現：
+
+  - 空格 → 換成&nbsp;或&#160;
+
+  - 大於&gt; → &gt; 或 &#62;
+
+  - 小於&lt; → &lt; 或 &#60;
+
+  - 參考符號列表：<https://oinam.github.io/entities/&gt;
+
+- **區塊元素（block level）前後會換行，不是透過&lt;br&gt;來換行，就是區塊元素，反之不換行的的就是行內元素（inline level）**
+
+- &lt;h1&gt;\~&lt;h6&gt;：標題大小
+
+- &lt;p&gt;：定義段落
+
+- &lt;hr&gt;：分隔網頁段落（沒有結束標籤）
+
+- &lt;br&gt;：換行（沒有結束標籤）
+
+- &lt;pre&gt;：preformatted，該元素中的文本會按照原本的格式做排列，比如空白或換行。
+
+  ![image 8.png](./HTML文件結構-assets/image%208.png)
+
+- &lt;div&gt;：division，為分割區塊使用，是**區塊元素（block level），前後會換行**，常用在網站的元素佈局規劃，像是一個袋子，可以用來做各層級分類。
+
+  - 區塊元素可以包含區塊元素
+
+  - &lt;div&gt;不會被包含在一些功能特定的元素中（如&lt;h1&gt;、&lt;p&gt;，因為每個標籤有設計出來的用途與目的）
+
+- &lt;span&gt;：行內元素（inline level）前後不會換行
+
+  - 區塊元素可以包含行內元素，但行內元素不能包含區塊元素
+
+- &lt;b&gt;：粗體 bold
+
+- &lt;i&gt;：斜體
+
+- &lt;s&gt;：刪除線 strikethrough
+
+- &lt;u&gt;：底線 underline
+
+- &lt;strong&gt;：粗體，語氣強烈
+
+- &lt;em&gt;：斜體，強調
+
+- &lt;del&gt;：被刪除的文字
+
+- &lt;ins&gt;：插入的文字 insert（瀏覽器通常會畫底線）
+
+- 有些標籤雖然在瀏覽器上顯示一樣，但是一個是風格上改變，一個是語氣上不同，兩者在使用朗讀網站文章功能時可能會出現變化
+
+-
+
+## 為什麼寫 HTML 的時候會有這些屬於 CSS 的樣式設定？
+
+→HTML CSS JS 彼此能夠互相做一些簡單的設定
+
+- HTML 的 Element 呈現出來的預設 CSS 樣式對照表：<https://www.w3schools.com/cssref/css_default_values.php>
+
 
