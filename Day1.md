@@ -157,7 +157,7 @@ funtion name (){
     - 不能寫成如下圖，有既定寫法
 
     ```html
-    &lt;meta description="對網頁的說明"&gt;
+    <meta description="對網頁的說明">;
     ```
 
   - name=”keywords”：網頁的關鍵字，一樣放在 content 裡去定義
