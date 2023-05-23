@@ -136,11 +136,23 @@
     </figure>
 ```
 ---
-# CSS
+# 一些練習用到的CSS概念
 
 * padding：元素的內邊距（元素內離自己邊邊的距離）
 
 * margin：元素的外邊距（離其他元素的邊距）
+
+* background-image:url(““) ：背景圖片的路徑
+
+* background-repeat:no-repeat ：背景是否重複
+
+
+
+## class selector
+
+* .class{} ：類別選擇器，句點+類別自訂名稱
+
+* 在標籤的屬性中用class=””以表示將這個標籤歸納入某個類別中
 ---
 # Audio
 
@@ -190,3 +202,41 @@
 > 但一般如果不是用來嵌入外站的內容，還是盡量少用 iframe，因為 iframe 還是對網頁效能、維護性和 SEO 有非正面的影響。\
 > \
 > 出處：[fooish.com/html/iframe-tag.html](fooish.com/html/iframe-tag.html)
+
+---
+# 表格
+
+- &lt;table&gt;：表格
+
+- &lt;tr&gt;：table row：表格中的一列
+
+- &lt;th&gt;：table head，標題列其中一個儲存格
+
+- &lt;td&gt;：table data，資料列中的一個儲存格
+
+- &lt;thead&gt;：區分標題列的 container
+
+- &lt;tbody&gt;：區分資料列的 container
+
+- 順序：&lt;table&gt; → &lt;tr&gt; → &lt;tr&gt; → &lt;td&gt;（html 寫法會是由上往下，第一列寫完才是第二列這樣按照順序下來，注意閱讀及寫 table 時的順序）
+
+- CSS 可用語法：
+
+  - border-collapse:collapse / seperate
+
+    - 決定每個格子是否共用邊界或每個邊界都分離。
+
+  - border:2px solid black
+
+    - 邊線寬度 邊線形式 邊線顏色一定要三個值都有才會生效）
+
+## 合併儲存格
+
+- 屬性
+
+  - colspan=””：跨欄合併儲存格，值為要合併的格數
+
+  - rowspan=””：跨列合併儲存格，值為要合併的格數
+
+  - 被合併的欄位記得要刪掉，不然表格格式會跑掉
+
