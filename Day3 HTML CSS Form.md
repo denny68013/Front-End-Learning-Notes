@@ -22,7 +22,7 @@
 
     - 所以選擇完後，送到後端的會是 name=value（手機是 XX 型號）
     - value預先給定一個值，就會在載入網頁時該欄位有預先設定的值。
-    - &lt;datalist&gt;的&lt:option&gt;中的value屬性是指選項呈現出來的名稱
+    - &lt;datalist&gt;的&lt;option&gt;中的value屬性是指選項呈現出來的名稱
 
   - selected：可以預設表單要選擇的選項。
 
