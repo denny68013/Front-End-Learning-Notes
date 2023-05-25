@@ -23,6 +23,10 @@
     - 所以選擇完後，送到後端的會是 name=value（手機是 XX 型號）
     - value預先給定一個值，就會在載入網頁時該欄位有預先設定的值。
     - &lt;datalist&gt;的&lt;option&gt;中的value屬性是指選項呈現出來的名稱
+    
+  - required：必填欄位
+    - 如果是一組radio type的input，只需要其中一個選項required就好。
+    - 如果是下拉式選單想要避免大家選第一個「請選擇」選項，那就將該option的value設為””（empty）
 
   - selected：可以預設表單要選擇的選項。
 
