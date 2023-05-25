@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      iframe {
+        width: 80%;
+      }
+      textarea {
+        width: 90%;
+        height: 100%;
+      }
+      table {
+        padding: 2px;
+        padding-top: 2px;
+        margin: auto;
+        width: 80%;
+      }
+      td {
+        border: 1px #e9bbbb solid;
+        padding-top: 3px;
+      }
+      .title {
+        border: 1px #f0b1b1 solid;
+        border-bottom: 0px #cccccc solid;
+        padding: 4px;
+        padding-top: 2px;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+      }
+      .form {
+        border: 1px #f0b1b1 solid;
+        border-bottom: 0px #cccccc solid;
+        padding: 4px;
+        padding-top: 2px;
+        padding-bottom: 13px;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+      }
+      .dateAndPlace {
+        color: rgb(211, 45, 98);
+      }
+      .description {
+        color: gray;
+        font-size: small;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      .giftPic {
+        width: 50%;
+        padding-top: 2px;
+      }
+      #flowerImg {
+        width: 90%;
+      }
+      #titleImg {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <img src="./img/wedding_title_image.jpeg" id="titleImg" alt="" />
+    </div>
+    <div class="title">
+      <h1>婚禮邀請 2023.05.24</h1>
+
+      <p>
+        WEDDING INVITATION
+        <br />
+        我們要結婚了!
+        <br />
+        給每個曾參與我們人生過程的您
+      </p>
+    </div>
+    <div class="title">
+      <h2>獻上誠摯的邀請日期:</h2>
+      <div class="dateAndPlace">
+        <h3>2023/5/24(三) Wednesday Lunch午宴</h3>
+        <h3>時間：12:00 準時開席</h3>
+        <h3>地點: 与玥樓頂級粵菜餐廳</h3>
+        <h3>地址: 台中市南屯區公益路二段783號</h3>
+      </div>
+      無論您是否能夠出席婚禮，都希望您能夠回覆表單或給我們一些祝福，這對我們來說非常重要。
+      謝謝您！
+    </div>
+    <div class="title">
+      <h3>婚宴地點位置</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.372449214039!2d120.6292865!3d24.1509235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ddda8ac3d51%3A0x825b156dc65f98e2!2z5LiO546l5qiT6aCC57Sa57K16I-c6aSQ5buz!5e0!3m2!1szh-TW!2stw!4v1684914585893!5m2!1szh-TW!2stw"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- <hr /> -->
+
+    <form action="">
+      <div class="form">
+        <label for="name"><h3>請問您的大名？</h3></label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form">
+        <label for="relation"><h3>與新人的關係？</h3></label>
+        <select name="relation" id="relation" required>
+          <option value="">請選擇</option>
+          <option value="groomRelatives">新郎親戚</option>
+          <option value="groomCollegues">新郎同事</option>
+          <option value="groomFriends">新郎朋友</option>
+          <option value="brideRelatives">新娘親戚</option>
+          <option value="brideCollegues">新娘同事</option>
+          <option value="brideFriends">新娘朋友</option>
+          <option value="bothFriends">共同朋友</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <h3>是否會出席婚宴？</h3>
+        <input type="radio" id="isAttending" name="attendingWedding" required />
+        <label for="isAttending">出席，絕對到場！</label>
+        <br />
+        <input type="radio" id="notAttending" name="attendingWedding" />
+        <label for="notAttending"> 無法出席，祝你們幸福美滿！</label>
+      </div>
+
+      <div class="form">
+        <label for="totalPeopleAttending"><h3>共幾個人出席？</h3></label>
+        <p>人數請包含自己唷，方便我們分配桌數</p>
+        <input
+          type="number"
+          placeholder="請輸入數字"
+          min="1"
+          id="totalPeopleAttending"
+          required
+        />
+      </div>
+      <div class="form">
+        <label for="childSeatCount"><h3>需要幾張兒童座椅</h3></label>
+        <p class="description">
+          如不需要，請選擇0，如需超過10張，請在特殊需求欄說明
+        </p>
+        <input
+          type="number"
+          min="0"
+          max="10"
+          step="1"
+          value="0"
+          id="childSeatCount"
+        />
+      </div>
+      <div class="form">
+        <label for="vegetarianCount"><h3>共幾位吃素？</h3></label>
+        <p class="description">如都吃葷，請選擇0</p>
+        <input
+          type="number"
+          min="0"
+          step="1"
+          value="0"
+          id="vegetarianCount"
+          required
+        />
+      </div>
+      <div class="form">
+        <h3>是否需要寄送喜帖？</h3>
+        <input type="radio" id="isNeedElecInvation" name="isNeedInvation" />
+        <label for="isNeedElecInvation">需要，請寄電子喜帖給我</label>
+        <br />
+
+        <input type="radio" id="isNeedPaperInvation" name="isNeedInvation" />
+        <label for="isNeedPaperInvation">需要，請寄紙本喜帖給我</label>
+        <br />
+        <input type="radio" id="isNotNeedInvation" name="isNeedInvation" />
+        <label for="isNotNeedInvation"> 不用，婚禮相關資訊我都知道了！ </label>
+      </div>
+
+      <div class="form">
+        <label for="address"><h3>紙本喜帖寄送地址</h3></label>
+        <p class="description">如不需要，請填無</p>
+        <input type="text" id="address" />
+      </div>
+      <div class="form">
+        <label for="emailAddress"><h3>電子信箱（接收電子喜帖）</h3></label>
+        <p class="description">如不需要，請填無</p>
+        <input
+          type="email"
+          id="emailAddress"
+          placeholder="範例：thankyou@gmail.com"
+        />
+      </div>
+
+      <div class="form">
+        <h3>是否索取婚禮小物？</h3>
+        <p class="description">這次準備兩種，都是我們精心設計的！</p>
+        <table>
+          <tr>
+            <th>婚禮魔球爆米花</th>
+            <th>台式日曆喜糖包</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="./img/婚禮小物推薦_1.jpeg" alt="" class="giftPic" />
+            </td>
+            <td>
+              <img src="./img/婚禮小物推薦_2.jpeg" alt="" class="giftPic" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" id="popcorn" name="gift" />
+              <label for="popcorn">我要爆米花！</label>
+            </td>
+            <td>
+              <input type="radio" id="calenderCandy" name="gift" />
+              <label for="calenderCandy">我要日曆喜糖！</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" id="bothGifts" name="gift" />
+              <label for="bothGifts">我兩個都想要！</label>
+            </td>
+
+            <td>
+              <input type="radio" id="noGifts" name="gift" />
+              <label for="noGifts">沒關係，把東西留給需要的人！</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="form">
+        <label for="phone"><h3>您的聯絡電話：</h3></label>
+        <input
+          type="phone"
+          id="phone"
+          placeholder="範例：0912345678"
+          required
+        />
+      </div>
+
+      <div class="form">
+        <label for="specialNeed"><h3>是否有特殊需求？</h3></label>
+        <input type="text" id="specialNeed" placeholder="如沒有，空白即可" />
+      </div>
+
+      <div class="form">
+        <label for="anythingToSay"><h3>有什麼話想和我們說嗎？</h3></label>
+        <p>如果你有一些祝福的話不好意思當面說，就在這邊留言給我們吧！</p>
+        <img src="./img/wedding_ending_image.jpeg" id="flowerImg" alt="" />
+        <br />
+        <textarea
+          name="anythingToSay"
+          id="anythingToSay"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+        <button type="submit">送出！</button>
+      </div>
+    </form>
+  </body>
+</html>
