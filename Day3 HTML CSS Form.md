@@ -108,8 +108,8 @@
     - pattern=""：pattern屬性可以用來限制輸入文字的內容與字數
     
     ```html
-      <input type="text" pattern="[A-Z]{3}" />
-      <!-- 限定只能大寫英文字，只能3個字 -->
+      <input type="text" pattern="[A-Za-z]{3}" />
+      <!-- 限定只能英文字，只能3個字 -->
     ```
     
   - tel：電話輸入框
