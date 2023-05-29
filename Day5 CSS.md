@@ -303,34 +303,35 @@ a[target="_blank"] {text-decoration: none;}
 ---
 # Semantic Elements
 
-HTML中有一些具有語義的container，在網頁呈現上跟<div id=”article”>這種，沒有區別，但是在別人看程式碼的時候會因為這些語義元素讓理解的速度加快，元素包含但不限於如下：
+HTML 中有一些具有語義的 container，在網頁呈現上跟&lt;div id=”article”&gt;這種，沒有區別，但是在別人看程式碼的時候會因為這些語義元素讓理解的速度加快，元素包含但不限於如下：
 
-* <article>
+- &lt;article&gt;
 
-* <aside>
+- &lt;aside&gt;
 
-* <details>
+- &lt;details&gt;
 
-* <figcaption>
+- &lt;figcaption&gt;
 
-* <figure>
+- &lt;figure&gt;
 
-* <footer>
+- &lt;footer&gt;
 
-* <header>
+- &lt;header&gt;
 
-* <main>
+- &lt;main&gt;
 
-* <mark>
+- &lt;mark&gt;
 
-* <nav>
+- &lt;nav&gt;
 
-* <section>
+- &lt;section&gt;
 
-* <summary>
+- &lt;summary&gt;
 
-* <time>
+- &lt;time&gt;
 
 ![HTML Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
-圖片與列舉出自：<https://www.w3schools.com/html/html5_semantic_elements.asp>
+圖片與列舉出自：&lt;https://www.w3schools.com/html/html5_semantic_elements.asp&gt;
+
