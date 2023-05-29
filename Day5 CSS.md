@@ -219,6 +219,10 @@ a[target="_blank"] {text-decoration: none;}
 * 可以用CSS對html內的元素選擇指定的部分，因為這些指定的元素難以使用html寫法完成，因此這些
 
 * 優先權重同標籤，一樣是1分
+  
+* 有些self-closing element，如text input，是無法使用pseudo elements
+
+  * 具體參考這篇stackoverflow：https://stackoverflow.com/questions/26633229/to-what-self-closing-elements-can-before-and-after-pseudo-elements-be-applie
 
 #### 常用pseudo elements
 
