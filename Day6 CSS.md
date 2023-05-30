@@ -254,6 +254,11 @@
 ```
 
 * background-image：背景圖片
+  *  linear-gradient 線性漸層
+
+        * linear-gradient(角度,第一個顏色,第二個顏色,第三個顏色…)
+
+        * 角度：可以寫to bottom right、.25turn、90deg都可以
 
 * background-repeat：背景重複設定
 
