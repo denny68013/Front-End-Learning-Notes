@@ -332,6 +332,7 @@ clip-path: circle(50% at 50% 50%);
 
   * scale-down：會選擇none或contain其中一個比較小的大小去塞content box
 
+* background-size到屬性值也是跟object-fit一樣
 ---
 
 ## padding
