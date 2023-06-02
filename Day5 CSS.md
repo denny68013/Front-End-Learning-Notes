@@ -229,6 +229,8 @@ a[target="_blank"] {text-decoration: none;}
 * ::before
 
 * ::after
+    
+  * ::before 跟 ::after 之後的大括號內一定要有content屬性
 
 * ::first-letter
 
