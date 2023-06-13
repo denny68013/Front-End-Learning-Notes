@@ -101,7 +101,7 @@
 
 - Infinity、-Infinity：正數除以0會得到到值Infinity、負數除以0則會得到-Infinity
 
-- NaN：Not a Number的縮寫，如果遇到數字除以字串，JS會先把字串轉換成數字，但如果無法相除，就會得到NaN 
+- NaN：Not a Number的縮寫，如果遇到數字除以字串，JS會先把字串轉換成數字，但如果無法相除，就會得到NaN，形態上是數字（用`typeof`去檢驗的話） 
 
    ```javascript
    var x = 100 / 10;
@@ -299,3 +299,7 @@
 - true或false兩個關鍵字
 
    - 可以在等號右邊用比較運算方式賦值
+
+## typeof
+
+- `typeof`：檢驗資料的形態方法，會回傳該資料是屬於哪一種類別（如數字、字串、布林值等）
